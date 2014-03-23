@@ -1,0 +1,12 @@
+#Hidden files and emacs cruft
+**/.DS_Store
+*~
+
+.settings
+.classpath
+.project
+*.iml
+/build*/
+/dist/
+/resources_ext/
+

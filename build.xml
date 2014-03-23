@@ -1,0 +1,147 @@
+<!--
+  ~ Copyright (c) 2014, Massachusetts Institute of Technology
+  ~ Released under the BSD 2-Clause License
+  ~ http://opensource.org/licenses/BSD-2-Clause
+  -->
+
+<project name="kde" default="dist" basedir=".">
+    <description>
+        Builds Kernel Density Estimation library.
+    </description>
+
+    <!-- set global properties for this build -->
+    <property name="domain.name"    value="bits"/>
+    <property name="dist.dir"       value="dist"/>
+    <property name="dist.name"      value="${domain.name}_${ant.project.name}"/>
+    <property name="src.dir"        value="src"/>
+    <property name="build.dir"      value="build"/>
+    <property name="test.src.dir"   value="src_test"/>
+    <property name="test.build.dir" value="build_test"/>
+    <property name="lib.dir"        value="lib"/>
+    <property name="resources.dir"  value="resources"/>
+    <property name="resources.build.dir" value="resources_build"/>
+
+    <property name="compile.target" value="1.5"/>
+
+
+    <path id="classpath">
+        <fileset dir="${lib.dir}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <!-- Targets -->
+    <target name="init">
+        <tstamp>
+            <format property="build.timestamp" pattern="yyyy-MM-dd HH:mm"/>
+            <format property="build.timestamp.nospace" pattern="yyyy-MM-dd_HHmm"/>
+        </tstamp>
+    </target>
+
+
+    <target name="compile" depends="init" description="compile the source ">
+        <mkdir dir="${build.dir}"/>
+        <javac srcdir="src" destdir="build" debug="yes" fork="yes" target="${compile.target}" includeantruntime="false">
+            <exclude name="**/deprecated/**"/>
+            <classpath>
+                <path refid="classpath"/>
+            </classpath>
+        </javac>
+    </target>
+
+
+    <target name="compile-test" depends="compile" description="compile the test source ">
+        <mkdir dir="${test.build.dir}"/>
+        <javac srcdir="${test.src.dir}" destdir="${test.build.dir}" debug="yes" nowarn="true" target="${compile.target}"
+               includeantruntime="false">
+            <classpath>
+                <path refid="classpath"/>
+                <pathelement location="${build.dir}"/>
+            </classpath>
+        </javac>
+    </target>
+
+
+    <target name="get-build-version" description="Sets build.version based on svn.">
+        <exec executable="svnversion" dir="." outputproperty="build.version">
+            <arg line="."/>
+        </exec>
+
+        <condition property="build.version.notsimple">
+            <or>
+                <contains string="${build.version}" substring=":"/>
+                <contains string="${build.version}" substring="M"/>
+                <contains string="${build.version}" substring="S"/>
+            </or>
+        </condition>
+
+        <echo message="build.version = ${build.version}"/>
+    </target>
+
+
+    <target name="check-build-version" if="build.version.notsimple">
+        <echo message="Warning: all svn changes have not been committed."/>
+    </target>
+
+
+    <target name="svn" depends="get-build-version, check-build-version"/>
+
+
+    <target name="dist" depends="compile,svn" description="generate the jar file">
+        <mkdir dir="${dist.dir}"/>
+
+        <manifest file="MANIFEST.MF">
+            <attribute name="Built-By" value="${user.name}"/>
+            <attribute name="Build-Version" value="${build.version}"/>
+            <attribute name="Build-Timestamp" value="${build.timestamp}"/>
+        </manifest>
+
+        <property name="build.touch.version" value="VERSION_${build.version}"/>
+        <property name="build.touch.timestamp" value="TIMESTAMP_${build.timestamp.nospace}"/>
+
+        <!-- Add empty file with the version number in it. -->
+        <touch file="${build.touch.version}"/>
+        <touch file="${build.touch.timestamp}"/>
+
+        <jar jarfile="${dist.dir}/${dist.name}.jar"
+             basedir="${build.dir}"
+             manifest="MANIFEST.MF">
+
+            <fileset dir="${src.dir}"/>
+            <metainf file="README"/>
+            <metainf file="${build.touch.version}"/>
+            <metainf file="${build.touch.timestamp}"/>
+        </jar>
+
+        <delete file="MANIFEST.MF"/>
+        <delete file="${build.touch.version}"/>
+        <delete file="${build.touch.timestamp}"/>
+    </target>
+
+
+    <target name="clean" description="clean up">
+        <delete dir="${build.dir}"/>
+        <delete dir="${test.build.dir}"/>
+    </target>
+
+
+    <target name="test" depends="compile-test">
+        <junit haltonfailure="true">
+            <formatter type="plain" usefile="false"/>
+
+            <classpath>
+                <path refid="classpath"/>
+                <pathelement location="${build.dir}"/>
+                <pathelement location="${test.build.bir}"/>
+            </classpath>
+
+            <batchtest fork="yes">
+                <fileset dir="${test.src.dir}">
+                    <include name="**/*Test*.java"/>
+                    <include name="**/*Unit*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+
+</project>
