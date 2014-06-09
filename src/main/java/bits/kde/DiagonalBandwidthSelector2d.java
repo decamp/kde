@@ -7,6 +7,8 @@
 package bits.kde;
 
 
+import bits.fft.FastCosineTransform2d;
+
 /**
  * So you've got some 2d points and you want to convolve them
  * with a normal kernel to generate a pdf.  What bandwidth of
@@ -76,8 +78,7 @@ public class DiagonalBandwidthSelector2d {
 
         try {
             tStar = FZero.findZeroIn( func, 0.0, 0.1 );
-        } catch( MathException ex ) {
-        }
+        } catch( MathException ignore ) {}
 
         if( Double.isNaN( tStar ) ) {
             try {

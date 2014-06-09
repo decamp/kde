@@ -2,7 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa8d88ae-c365-43c8-91a7-87956c7e942f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src_test/bits/kde/Timer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/bits_fft-source.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/bits_fft.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bits/kde/BilinearSampler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bits/kde/DiagonalBandwidthSelector2d.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/bits/kde/DiagonalBandwidthSelector2dTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bits/kde/FZero.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bits/kde/Function11.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bits/kde/Function21.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bits/kde/Gaussian2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/bits/kde/ImagePanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bits/kde/KdePainter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bits/kde/KernelDensityEstimate2d.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/bits/kde/KernelDestinationEstimate2dTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bits/kde/MathException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bits/kde/Pots.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/bits/kde/TestUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/bits/kde/Timer.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.TXT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources_build/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources_build/kde2d/kde2d.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources_build/kde2d/license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources_build/kde2d/testDct1.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources_build/kde2d/testDct2.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources_build/kde2d/testIdct1.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources_build/kde2d/testIdct2.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bits/kde/BilinearSampler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bits/kde/DiagonalBandwidthSelector2d.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bits/kde/FZero.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bits/kde/FastCosineTransform.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bits/kde/FastCosineTransform2d.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bits/kde/FastFourierTransform.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bits/kde/FastFourierTransform2d.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bits/kde/Function11.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bits/kde/Function21.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bits/kde/Gaussian2.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bits/kde/KdePainter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bits/kde/KernelDensityEstimate2d.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bits/kde/MathException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bits/kde/Pots.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src_test/bits/kde/DiagonalBandwidthSelector2dTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src_test/bits/kde/FastCosineTransform2dTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src_test/bits/kde/FastCosineTransformTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src_test/bits/kde/FastFourierTransform2dTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src_test/bits/kde/FastFourierTransformTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src_test/bits/kde/ImagePanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src_test/bits/kde/KernelDestinationEstimate2dTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src_test/bits/kde/TestUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src_test/bits/kde/Timer.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kde.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,6 +140,13 @@
         <option value="$PROJECT_DIR$/src_test/cogmac/kde/ImagePanel.java" />
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/LICENSE.TXT" />
+        <option value="$PROJECT_DIR$/src/bits/kde/FastCosineTransform2d.java" />
+        <option value="$PROJECT_DIR$/src/bits/kde/FastFourierTransform.java" />
+        <option value="$PROJECT_DIR$/src/bits/kde/DiagonalBandwidthSelector2d.java" />
+        <option value="$PROJECT_DIR$/src_test/bits/kde/KernelDestinationEstimate2dTest.java" />
+        <option value="$PROJECT_DIR$/src/bits/kde/FZero.java" />
+        <option value="$PROJECT_DIR$/src/bits/kde/KernelDensityEstimate2d.java" />
+        <option value="$PROJECT_DIR$/src/bits/kde/Pots.java" />
       </list>
     </option>
   </component>
@@ -158,7 +217,7 @@
       <showMembers />
       <showModules />
       <showLibraryContents />
-      <hideEmptyPackages ProjectPane="false" />
+      <hideEmptyPackages ProjectPane="true" />
       <abbreviatePackageNames />
       <autoscrollToSource />
       <autoscrollFromSource />
@@ -185,8 +244,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,8 +264,98 @@
     <property name="options.searchVisible" value="true" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
     <property name="LayoutCode.rearrangeEntriesXML" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.KernelDestinationEstimate2dTest">
+    <configuration default="false" name="FastCosineTransform2dTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="decamp_kde" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="bits.kde" />
+      <option name="MAIN_CLASS_NAME" value="bits.kde.FastCosineTransform2dTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FastCosineTransformTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="decamp_kde" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="bits.kde" />
+      <option name="MAIN_CLASS_NAME" value="bits.kde.FastCosineTransformTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DiagonalBandwidthSelector2dTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="decamp_kde" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="bits.kde" />
+      <option name="MAIN_CLASS_NAME" value="bits.kde.DiagonalBandwidthSelector2dTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="KernelDestinationEstimate2dTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bits.kde.KernelDestinationEstimate2dTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="decamp_kde" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -262,7 +411,20 @@
       <patterns />
       <method />
     </configuration>
-    <list size="0" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.FastCosineTransform2dTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FastCosineTransformTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DiagonalBandwidthSelector2dTest.test" />
+      <item index="3" class="java.lang.String" itemvalue="Application.KernelDestinationEstimate2dTest" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.KernelDestinationEstimate2dTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DiagonalBandwidthSelector2dTest.test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FastCosineTransformTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FastCosineTransform2dTest" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -282,23 +444,23 @@
     <frame x="0" y="22" width="2560" height="1574" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994602" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299595" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1810961" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18347895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -325,98 +487,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src_test/bits/kde/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="617" selection-end="617" vertical-scroll-proportion="0.17098446" vertical-offset="0" max-vertical-offset="965">
-          <folding>
-            <element signature="docComment;class#Timer#0" expanded="false" />
-            <element signature="docComment;method#start#0;class#Timer#0" expanded="false" />
-            <element signature="method#start#0;class#Timer#0" expanded="false" />
-            <element signature="docComment;method#seconds#0;class#Timer#0" expanded="false" />
-            <element signature="method#seconds#0;class#Timer#0" expanded="false" />
-            <element signature="docComment;method#printSeconds#0;class#Timer#0" expanded="false" />
-            <element signature="method#printSeconds#0;class#Timer#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src_test/bits/kde/DiagonalBandwidthSelector2dTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="226" selection-end="226" vertical-scroll-proportion="0.17098446" vertical-offset="0" max-vertical-offset="965">
-          <folding>
-            <element signature="e#0#1012#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src_test/bits/kde/FastFourierTransform2dTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="225" selection-end="225" vertical-scroll-proportion="0.09326425" vertical-offset="0" max-vertical-offset="10395">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src_test/bits/kde/FastCosineTransformTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="0.07772021" vertical-offset="0" max-vertical-offset="1680">
-          <folding>
-            <element signature="e#0#2839#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src_test/bits/kde/FastCosineTransform2dTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="0.07772021" vertical-offset="0" max-vertical-offset="3150">
-          <folding>
-            <element signature="e#0#5606#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src_test/bits/kde/FastFourierTransformTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="204" selection-end="204" vertical-scroll-proportion="0.062176164" vertical-offset="0" max-vertical-offset="4170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src_test/bits/kde/ImagePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="71" selection-end="71" vertical-scroll-proportion="0.015544041" vertical-offset="0" max-vertical-offset="965">
-          <folding>
-            <element signature="docComment;class#ImagePanel#0" expanded="false" />
-            <element signature="method#showImage#0;class#ImagePanel#0" expanded="false" />
-            <element signature="method#showImage#1;class#ImagePanel#0" expanded="false" />
-            <element signature="method#showImage#2;class#ImagePanel#0" expanded="false" />
-            <element signature="method#showImage#3;class#ImagePanel#0" expanded="false" />
-            <element signature="method#frameImagePanel#0;class#ImagePanel#0" expanded="false" />
-            <element signature="method#frameImagePanel#1;class#ImagePanel#0" expanded="false" />
-            <element signature="method#framePanel#0;class#ImagePanel#0" expanded="false" />
-            <element signature="method#framePanel#1;class#ImagePanel#0" expanded="false" />
-            <element signature="method#ImagePanel#0;class#ImagePanel#0" expanded="false" />
-            <element signature="method#ImagePanel#1;class#ImagePanel#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#ImagePanel#0" expanded="false" />
-            <element signature="method#setImage#0;class#ImagePanel#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src_test/bits/kde/KernelDestinationEstimate2dTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="9" selection-start="976" selection-end="976" vertical-scroll-proportion="0.59067357" vertical-offset="0" max-vertical-offset="2130">
-          <folding>
-            <element signature="e#0#3988#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="98" column="34" selection-start="3494" selection-end="3494" vertical-scroll-proportion="0.14507772" vertical-offset="1330" max-vertical-offset="2295">
@@ -424,19 +494,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE.TXT">
+    <entry file="file://$PROJECT_DIR$/src/bits/kde/Function21.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="79" selection-end="79" vertical-scroll-proportion="0.031982943" vertical-offset="0" max-vertical-offset="938">
+        <state line="11" column="17" selection-start="228" selection-end="228" vertical-scroll-proportion="0.10880829" vertical-offset="0" max-vertical-offset="965">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bits/kde/Function11.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="17" selection-start="228" selection-end="228" vertical-scroll-proportion="0.10880829" vertical-offset="0" max-vertical-offset="965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_test/bits/kde/ImagePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="0" selection-start="4427" selection-end="4427" vertical-scroll-proportion="0.65284973" vertical-offset="0" max-vertical-offset="965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_test/bits/kde/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="615" selection-end="615" vertical-scroll-proportion="0.30051813" vertical-offset="40" max-vertical-offset="1005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_test/bits/kde/DiagonalBandwidthSelector2dTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="41" selection-start="500" selection-end="500" vertical-scroll-proportion="0.27979276" vertical-offset="0" max-vertical-offset="965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bits/kde/BilinearSampler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.TXT">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="516" selection-end="516" vertical-scroll-proportion="0.23316061" vertical-offset="0" max-vertical-offset="965">
+        <state line="19" column="13" selection-start="614" selection-end="614" vertical-scroll-proportion="0.29533678" vertical-offset="0" max-vertical-offset="965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="53" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.36780384" vertical-offset="0" max-vertical-offset="938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src_test/bits/kde/KernelDestinationEstimate2dTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="55" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.5595855" vertical-offset="0" max-vertical-offset="1035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bits/kde/FZero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bits/kde/MathException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="31" selection-start="421" selection-end="421" vertical-scroll-proportion="0.17098446" vertical-offset="0" max-vertical-offset="965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bits/kde/KernelDensityEstimate2d.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.15544042" vertical-offset="0" max-vertical-offset="3750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bits/kde/Pots.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bits/kde/DiagonalBandwidthSelector2d.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="16" selection-start="2393" selection-end="2393" vertical-scroll-proportion="-0.13989638" vertical-offset="360" max-vertical-offset="1335">
           <folding />
         </state>
       </provider>
@@ -506,6 +660,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
