@@ -3,7 +3,6 @@
  * Released under the BSD 2-Clause License
  * http://opensource.org/licenses/BSD-2-Clause
  */
-
 package bits.kde;
 
 
@@ -52,10 +51,6 @@ public class BilinearSampler implements Function21 {
     /**
      * Computes value at a given point using
      * a bilinear interpolation within the table.
-     *
-     * @param x
-     * @param y
-     * @return
      */
     public double apply( double x, double y ) {
         double px = (x - mMinX) * mScaleX;

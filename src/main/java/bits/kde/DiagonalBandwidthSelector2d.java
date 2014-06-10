@@ -11,14 +11,17 @@ import bits.fft.FastCosineTransform2d;
 
 /**
  * So you've got some 2d points and you want to convolve them
- * with a normal kernel to generate a pdf.  What bandwidth of
- * kernel do you use?  Well, there's some criterion, like
- * MSIE or some such, that you want to estimate and minimize.
- * That is what this class does.  Give it some points
+ * with a gaussian kernel to generate a pdf. What bandwidth of
+ * kernel do you use? Well, there's some criteria, like
+ * MSIE or some such, that you should usually try to minimize.
+ * That is what this class does. Give it some points
  * and it will give you the optimal kernel bandwidth.
- * <p/>
+ * <p>
+ * Currently limited to diagonal bandwidth matrices
+ * (Gaussians that are symmetric about each axis).
+ * <p>
  * This is based on matlab code by Zdravko Botev:
- * <p/>
+ * <p>
  * Z. I. Botev, J. F. Grotowski and D. P. Kroese
  * "KERNEL DENSITY ESTIMATION VIA DIFFUSION", Submitted to the
  * Annals of Statistics, 2009
@@ -58,7 +61,7 @@ public class DiagonalBandwidthSelector2d {
         double[] hist = hist( points, off, numPoints, bounds, quant );
         double[] freq = new double[quant * quant];
 
-        FastCosineTransform2d trans = FastCosineTransform2d.create( quant );
+        FastCosineTransform2d trans = new FastCosineTransform2d( quant );
         trans.apply( hist, 0, false, freq, 0 );
 
         double[] bigI = new double[quant];
@@ -116,7 +119,6 @@ public class DiagonalBandwidthSelector2d {
 
         for( int i = 0; i < len; i++ ) {
             double v = points[i * 2 + off];
-
             if( v < x0 ) {
                 x0 = v;
             }
@@ -125,7 +127,6 @@ public class DiagonalBandwidthSelector2d {
             }
 
             v = points[i * 2 + 1 + off];
-
             if( v < y0 ) {
                 y0 = v;
             }
@@ -153,10 +154,8 @@ public class DiagonalBandwidthSelector2d {
 
         for( int i = 0; i < len; i++ ) {
             double v = points[off + i];
-
             int p0 = (int)((points[off + i * 2] + addX) * scaleX);
             int p1 = (int)((points[off + i * 2 + 1] + addY) * scaleY);
-
             if( p0 < 0 || p1 < 0 || p0 >= quant || p1 >= quant ) {
                 continue;
             }
@@ -198,7 +197,6 @@ public class DiagonalBandwidthSelector2d {
                         2.0 * sumFunc( 1, 1, t );
 
             double time = Math.pow( PI2 * mLen * sf, -1.0 / 3.0 );
-
             return t - (t - time) / time;
         }
 
@@ -220,7 +218,6 @@ public class DiagonalBandwidthSelector2d {
 
             for( int i = 0; i < dim; i++ ) {
                 double vy = work1[i];
-
                 for( int j = 0; j < dim; j++ ) {
                     sum += vy * bigA[i + j * dim] * work0[j];
                 }

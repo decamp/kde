@@ -13,11 +13,11 @@ package bits.kde;
  * density estimation algorithm. Essentially, each point
  * is convolved with a kernel. Usually, the kernel is
  * the normal function.
- * <p/>
+ * <p>
  * The main difficulty here is selecting the bandwidth of the
  * kernel. This class will do so automatically.  For
  * more information, see DiagonalBandwidthSelector2d.
- * <p/>
+ * <p>
  * This implementation precomputes a table of the KDE PDF
  * within some range.  Values provided by this function
  * are not exact, but a based on bilinear interpolation
@@ -48,11 +48,11 @@ public class KernelDensityEstimate2d extends BilinearSampler implements Function
      * @param off       Offset into point array.
      * @param numPoints Number of points to use.
      * @param bounds    Bounds over which the PDF table will be computed. (Optional)
-     * @param cellSize  Size of the side of each cell in table: IE, the sampling interval. (Optional)<br/>
-     *                  Use a low value for more approximate results, but faster initialization and less memory use. <br/>
-     *                  Use a high value for more accurate results, but slower initializatin and more memory use. <br/>
+     * @param cellSize  Size of the side of each cell in table: IE, the sampling interval. (Optional)<br>
+     *                  Use a low value for more approximate results, but faster initialization and less memory use. <br>
+     *                  Use a high value for more accurate results, but slower initializatin and more memory use. <br>
      *                  Use <code>null</code> to select a default cell size.
-     * @param kernel    Kernel function (Optional) <br/>
+     * @param kernel    Kernel function (Optional) <br>
      *                  Set to <code>null</code> to select a kernel automatically.
      * @return New KernelDensityEstimate of the given data points.
      */
