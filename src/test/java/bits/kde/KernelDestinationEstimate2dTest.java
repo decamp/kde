@@ -5,6 +5,8 @@
  */
 package bits.kde;
 
+import org.junit.Ignore;
+
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.Random;
@@ -13,6 +15,7 @@ import java.util.Random;
 /**
  * @author Philip DeCamp
  */
+@Ignore
 public class KernelDestinationEstimate2dTest {
 
     public static void main( String[] args ) throws Exception {

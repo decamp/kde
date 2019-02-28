@@ -13,8 +13,6 @@ package bits.kde;
  */
 public class FZero {
 
-    public static final int CODE_OK = 0;
-
     private static final double SQRT2 = Math.sqrt( 2.0 );
     private static final double TOL   = 2.2204E-15;
 

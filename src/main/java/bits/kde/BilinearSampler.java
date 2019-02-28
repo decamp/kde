@@ -26,14 +26,15 @@ public class BilinearSampler implements Function21 {
     private double mOobValue = 0.0;
 
 
-    public BilinearSampler( double[] tableRef,
-                            int cols,
-                            int rows,
-                            double minX,
-                            double minY,
-                            double maxX,
-                            double maxY )
-    {
+    public BilinearSampler(
+        double[] tableRef,
+        int cols,
+        int rows,
+        double minX,
+        double minY,
+        double maxX,
+        double maxY
+    ) {
         mTable = tableRef;
         mCols = cols;
         mRows = rows;

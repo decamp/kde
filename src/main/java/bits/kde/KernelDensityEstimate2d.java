@@ -56,13 +56,14 @@ public class KernelDensityEstimate2d extends BilinearSampler implements Function
      *                  Set to <code>null</code> to select a kernel automatically.
      * @return New KernelDensityEstimate of the given data points.
      */
-    public static KernelDensityEstimate2d compute( double[] points,
-                                                   int off,
-                                                   int numPoints,
-                                                   double[] bounds,
-                                                   Double cellSize,
-                                                   Function21 kernel )
-    {
+    public static KernelDensityEstimate2d compute(
+        double[] points,
+        int off,
+        int numPoints,
+        double[] bounds,
+        Double cellSize,
+        Function21 kernel
+    ) {
         if( bounds == null ) {
             bounds = selectBounds( points, off, numPoints, 0.25 );
         }
@@ -220,15 +221,16 @@ public class KernelDensityEstimate2d extends BilinearSampler implements Function
     private final Function21 mKernel;
 
 
-    private KernelDensityEstimate2d( double[] tableRef,
-                                     int width,
-                                     int height,
-                                     double minX,
-                                     double minY,
-                                     double maxX,
-                                     double maxY,
-                                     Function21 kernel )
-    {
+    private KernelDensityEstimate2d(
+        double[] tableRef,
+        int width,
+        int height,
+        double minX,
+        double minY,
+        double maxX,
+        double maxY,
+        Function21 kernel
+    ) {
         super( tableRef, width, height, minX, minY, maxX, maxY );
         mKernel = kernel;
     }

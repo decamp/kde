@@ -6,12 +6,15 @@
 
 package bits.kde;
 
+import org.junit.Ignore;
+
 import static org.junit.Assert.assertTrue;
 
 
 /**
  * @author Philip DeCamp
  */
+@Ignore
 class TestUtil {
 
     static String formatComplex( double[] v, int off, int rows, int cols ) {

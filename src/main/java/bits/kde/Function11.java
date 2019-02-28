@@ -10,5 +10,5 @@ package bits.kde;
  * @author Philip DeCamp
  */
 public interface Function11 {
-    public double apply( double x );
+    double apply( double x );
 }

@@ -38,7 +38,13 @@ public class DiagonalBandwidthSelector2d {
      * @return A 2x2 matrix, [exx, exy; exy, eyy] containing the bandwidth matrix.  Will always be a diagonal matrix.
      * @throws MathException If method fails to estimate optimal bandwidth.
      */
-    public static double[] computeBandwidth( double[] points, int off, int numPoints, double[] bounds ) throws MathException {
+    public static double[] computeBandwidth(
+        double[] points,
+        int off,
+        int numPoints,
+        double[] bounds )
+        throws MathException
+    {
         return computeBandwidth( points, off, numPoints, bounds, 1 << 8 );
     }
 
@@ -51,7 +57,14 @@ public class DiagonalBandwidthSelector2d {
      * @return A 2x2 matrix, [exx, exy; exy, eyy] containing the bandwidth matrix.  Will always be diagonal.
      * @throws MathException If method fails to estimate optimal bandwidth.
      */
-    public static double[] computeBandwidth( double[] points, int off, int numPoints, double[] bounds, int quant ) throws MathException {
+    public static double[] computeBandwidth(
+        double[] points,
+        int off,
+        int numPoints,
+        double[] bounds,
+        int quant )
+        throws MathException
+    {
         quant = Pots.ceilPot( quant );
 
         if( bounds == null ) {
@@ -77,11 +90,12 @@ public class DiagonalBandwidthSelector2d {
         }
 
         EvolveFunc func = new EvolveFunc( quant, numPoints, bigI, bigA );
-        double tStar = Double.NaN;
+        double     tStar = Double.NaN;
 
         try {
             tStar = FZero.findZeroIn( func, 0.0, 0.1 );
-        } catch( MathException ignore ) {}
+        } catch( MathException ignore ) {
+        }
 
         if( Double.isNaN( tStar ) ) {
             try {
@@ -95,8 +109,14 @@ public class DiagonalBandwidthSelector2d {
         double p20 = func.sumFunc( 2, 0, tStar );
         double p11 = func.sumFunc( 1, 1, tStar );
 
-        double ty = Math.pow( Math.pow( p02, 0.75 ) / (4.0 * Math.PI * numPoints * Math.pow( p20, 0.75 ) * (p11 + Math.sqrt( p20 * p02 ))), 1.0 / 3.0 );
-        double tx = Math.pow( Math.pow( p20, 0.75 ) / (4.0 * Math.PI * numPoints * Math.pow( p02, 0.75 ) * (p11 + Math.sqrt( p20 * p02 ))), 1.0 / 3.0 );
+        double ty = Math.pow( Math.pow( p02, 0.75 ) / (4.0 * Math.PI * numPoints * Math.pow(
+            p20,
+            0.75
+        ) * (p11 + Math.sqrt( p20 * p02 ))), 1.0 / 3.0 );
+        double tx = Math.pow( Math.pow( p20, 0.75 ) / (4.0 * Math.PI * numPoints * Math.pow(
+            p02,
+            0.75
+        ) * (p11 + Math.sqrt( p20 * p02 ))), 1.0 / 3.0 );
 
         double[] ret = { 0, 0, 0, 0 };
         ret[0] = Math.sqrt( tx ) * (bounds[2] - bounds[0]);
@@ -153,7 +173,6 @@ public class DiagonalBandwidthSelector2d {
         double weight = 1.0 / len;
 
         for( int i = 0; i < len; i++ ) {
-            double v = points[off + i];
             int p0 = (int)((points[off + i * 2] + addX) * scaleX);
             int p1 = (int)((points[off + i * 2 + 1] + addY) * scaleY);
             if( p0 < 0 || p1 < 0 || p0 >= quant || p1 >= quant ) {
@@ -223,7 +242,6 @@ public class DiagonalBandwidthSelector2d {
                 }
             }
 
-            //return Math.pow(-1.0, s0 + s1) * sum * Math.pow(Math.PI, 2.0 * (s0 + s1));
             return (((s0 + s1) & 1) * -2 + 1) * sum * Math.pow( Math.PI, 2.0 * (s0 + s1) );
         }
 
@@ -231,7 +249,6 @@ public class DiagonalBandwidthSelector2d {
         double sumFunc( int s0, int s1, double t ) {
             if( s0 + s1 <= 4 ) {
                 double vs = sumFunc( s0 + 1, s1, t ) + sumFunc( s0, s1 + 1, t );
-                //double vc = (1 + 1.0 / Math.pow(2.0, s0 + s1 + 1)) / 3.0;
                 double vc = (1.0 + 1.0 / (1 << (s0 + s1 + 1))) / 3.0;
                 double time = Math.pow( -2.0 * vc * k( s0 ) * k( s1 ) / mLen / vs, 1.0 / (2.0 + s0 + s1) );
                 return psi( s0, s1, time );
@@ -249,7 +266,6 @@ public class DiagonalBandwidthSelector2d {
                 prod *= i;
             }
 
-            //return Math.pow(-1.0, s) * prod * INV_SQRT_PI2;
             return ((s & 1) * -2 + 1) * prod * INV_SQRT_PI2;
         }
 

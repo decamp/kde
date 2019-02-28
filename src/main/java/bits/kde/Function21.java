@@ -10,5 +10,5 @@ package bits.kde;
  * @author Philip DeCamp
  */
 public interface Function21 {
-    public double apply( double x, double y );
+    double apply( double x, double y );
 }
